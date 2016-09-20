@@ -1,0 +1,12 @@
+FILE(REMOVE_RECURSE
+  "rfid_swigPYTHON_wrap.cxx"
+  "rfid_swig.py"
+  "CMakeFiles/rfid_swig_swig_doc"
+  "rfid_swig_doc.i"
+  "rfid_swig_doc_swig_docs/xml/index.xml"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/rfid_swig_swig_doc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

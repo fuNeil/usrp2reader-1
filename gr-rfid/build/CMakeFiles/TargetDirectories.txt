@@ -1,0 +1,11 @@
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/swig/CMakeFiles/_rfid_swig.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/swig/CMakeFiles/_rfid_swig_doc_tag.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/swig/CMakeFiles/_rfid_swig_swig_tag.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/lib/CMakeFiles/gnuradio-rfid.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/python/CMakeFiles/pygen_python_8e2a7.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/swig/CMakeFiles/pygen_swig_39753.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/swig/CMakeFiles/rfid_swig_swig_doc.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/lib/CMakeFiles/test-rfid.dir
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/CMakeFiles/uninstall.dir

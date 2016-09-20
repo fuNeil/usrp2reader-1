@@ -1,0 +1,7 @@
+# CMake generated Testfile for 
+# Source directory: /home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib
+# Build directory: /home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/lib
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(test_rfid "/bin/sh" "/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/build/lib/test_rfid_test.sh")
