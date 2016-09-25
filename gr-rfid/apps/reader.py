@@ -9,7 +9,7 @@ from gnuradio import digital
 from gnuradio import qtgui
 import rfid
 
-DEBUG = False
+DEBUG = True
 
 class reader_top_block(gr.top_block):
 
@@ -99,8 +99,8 @@ class reader_top_block(gr.top_block):
       #self.connect(self.source, self.file_sink_source)
 
     else :  # Offline Data
-      self.file_source               = blocks.file_source(gr.sizeof_gr_complex*1, "../misc/data/file_source_test",False)   ## instead of uhd.usrp_source
-      self.file_sink                  = blocks.file_sink(gr.sizeof_gr_complex*1,   "../misc/data/file_sink", False)     ## instead of uhd.usrp_sink
+      self.file_source               = blocks.file_source(gr.sizeof_gr_complex*1, "../misc/data/source_two_tag",False)   ## instead of uhd.usrp_source
+      self.file_sink                  = blocks.file_sink(gr.sizeof_gr_complex*1,   "../misc/data/reader_two_tag", False)     ## instead of uhd.usrp_sink
  
       ######## Connections ######### 
       self.connect(self.file_source, self.matched_filter)
@@ -114,7 +114,7 @@ class reader_top_block(gr.top_block):
     #File sinks for logging 
     #self.connect(self.gate, self.file_sink_gate)
     self.connect((self.tag_decoder,1), self.file_sink_decoder) # (Do not comment this line)
-    #self.connect(self.file_sink_reader, self.file_sink_reader)
+    #self.connect(self.reader, self.file_sink_reader)
     #self.connect(self.matched_filter, self.file_sink_matched_filter)
 
 if __name__ == '__main__':

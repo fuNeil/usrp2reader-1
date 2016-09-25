@@ -349,7 +349,10 @@ namespace gr {
             reader_state->reader_stats.n_epc_correct+=1;
 
             int result = 0;
-
+            for(int i = 0 ; i < 8 ; ++i)
+            {
+              result += std::pow(2,7-i) * EPC_bits[104+i] ;
+            }
             GR_LOG_INFO(d_debug_logger, "EPC CORRECTLY DECODED");
             
             char EPC_hex[32] = "";
@@ -392,6 +395,18 @@ namespace gr {
             {
               reader_state->reader_stats.tag_reads[result]=1;
             }
+
+
+
+            std::map<std::string,int>::iterator ite = reader_state->reader_stats.tag_EPCs.find(EPC_hex);
+            if ( ite != reader_state->reader_stats.tag_EPCs.end())
+            {
+              ite->second ++;
+            }
+            else
+            {
+              reader_state->reader_stats.tag_EPCs[EPC_hex]=1;
+            }           
           }
           else
           {     

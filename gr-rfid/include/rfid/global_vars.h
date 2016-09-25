@@ -48,7 +48,7 @@ namespace gr {
 
       std::vector<int>  unique_tags_round;
        std::map<int,int> tag_reads;    
-
+       std::map<std::string,int> tag_EPCs;
       struct timeval start, end; 
     };
 

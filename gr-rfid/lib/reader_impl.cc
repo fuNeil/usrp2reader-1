@@ -181,12 +181,20 @@ namespace gr {
       std::cout << "| Number of unique tags : "  <<  reader_state->reader_stats.tag_reads.size() << std::endl;
 
       std::map<int,int>::iterator it;
-
+      std::map<std::string,int>::iterator ite;
+     /*
       for(it = reader_state->reader_stats.tag_reads.begin(); it != reader_state->reader_stats.tag_reads.end(); it++) 
       {
         std::cout << std::hex <<  "| Tag ID : " << it->first << "  ";
         std::cout << "Num of reads : " << std::dec << it->second << std::endl;
       }
+      */
+      for(ite = reader_state->reader_stats.tag_EPCs.begin(); ite != reader_state->reader_stats.tag_EPCs.end(); ite++) 
+      {
+        std::cout << std::hex <<  "| EPC : " << ite->first << "  ";
+        std::cout << "Num of reads : " << std::dec << ite->second << std::endl;
+      }
+
 
       std::cout << " --------------------------" << std::endl;
     }

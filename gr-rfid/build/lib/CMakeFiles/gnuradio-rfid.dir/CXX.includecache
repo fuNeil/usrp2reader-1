@@ -18,38 +18,30 @@ map
 sys/time.h
 -
 
-../include/rfid/tag_decoder.h
+../include/rfid/reader.h
 rfid/api.h
 -
 gnuradio/block.h
 -
 
-/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/tag_decoder_impl.cc
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/reader_impl.cc
 config.h
 /home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/config.h
 gnuradio/io_signature.h
 -
-gnuradio/prefs.h
--
-gnuradio/math.h
--
-cmath
--
+reader_impl.h
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/reader_impl.h
+rfid/global_vars.h
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/rfid/global_vars.h
 sys/time.h
 -
-tag_decoder_impl.h
-/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/tag_decoder_impl.h
 
-/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/tag_decoder_impl.h
-rfid/tag_decoder.h
+/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/reader_impl.h
+rfid/reader.h
 -
 vector
 -
-rfid/global_vars.h
-/home/xiaoyifan/Gen2-UHF-RFID-Reader/gr-rfid/lib/rfid/global_vars.h
-time.h
--
-numeric
+queue
 -
 fstream
 -
@@ -150,14 +142,6 @@ log4cpp/OstreamAppender.hh
 log4cpp/PatternLayout.hh
 -
 
-/usr/local/include/gnuradio/math.h
-cmath
--
-gnuradio/api.h
--
-gnuradio/gr_complex.h
--
-
 /usr/local/include/gnuradio/messages/msg_accepter.h
 gnuradio/api.h
 -
@@ -180,16 +164,6 @@ gnuradio/api.h
 gnuradio/messages/msg_accepter.h
 -
 pmt/pmt.h
--
-
-/usr/local/include/gnuradio/prefs.h
-gnuradio/api.h
--
-string
--
-map
--
-gnuradio/thread/thread.h
 -
 
 /usr/local/include/gnuradio/rpccallbackregister_base.h
